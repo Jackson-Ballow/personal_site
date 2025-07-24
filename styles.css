@@ -998,6 +998,163 @@ html {
     }
 }
 
+/* Hobbies Section */
+.hobbies {
+    padding: 100px 0;
+    background-color: var(--bg-secondary);
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hobby-item {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-tertiary) 100%);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.hobby-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.hobby-item:hover::before {
+    opacity: 0.05;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-primary);
+}
+
+.hobby-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.hobby-item:hover .hobby-icon {
+    transform: scale(1.1) rotateZ(10deg);
+}
+
+.hobby-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Custom colors for hobby icons */
+.hobby-icon.basketball {
+    background: linear-gradient(135deg, #FF6700 0%, #FF8C00 100%);
+}
+
+.hobby-icon.hiking {
+    background: linear-gradient(135deg, #228B22 0%, #32CD32 100%);
+}
+
+.hobby-icon.climbing {
+    background: linear-gradient(135deg, #696969 0%, #A9A9A9 100%);
+}
+
+.hobby-icon.fishing {
+    background: linear-gradient(135deg, #1E90FF 0%, #00BFFF 100%);
+}
+
+.hobby-icon.boxing {
+    background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);
+}
+
+.hobby-icon.ml-trading {
+    background: linear-gradient(135deg, #4B0082 0%, #8A2BE2 100%);
+}
+
+/* Special styling for team logos */
+.hobby-icon.notre-dame {
+    background: linear-gradient(135deg, #002B5C 0%, #0C2340 100%);
+    padding: 10px;
+}
+
+.hobby-icon.saints {
+    background: linear-gradient(135deg, #D3BC8D 0%, #101820 100%);
+    padding: 10px;
+}
+
+.hobby-icon.notre-dame img,
+.hobby-icon.saints img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.hobby-item h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.hobby-item p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .hobbies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .hobby-item {
+        padding: 30px 20px;
+    }
+    
+    .hobby-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .hobby-icon i {
+        font-size: 2rem;
+    }
+    
+    .hobby-item h3 {
+        font-size: 1.25rem;
+    }
+}
+
 /* Contact Section */
 .contact {
     padding: 100px 0;
