@@ -163,7 +163,6 @@ EMAIL;TYPE=HOME:jacksonballow@gmail.com
 URL:https://www.desync.ai
 URL;TYPE=LinkedIn:https://www.linkedin.com/in/jackson-ballow-9888271bb/
 URL;TYPE=GitHub:https://github.com/Jackson-Desync
-NOTE:Full Stack Developer & AI Entrepreneur. Master's Student at Purdue University.
 END:VCARD`;
 
     const blob = new Blob([vCardData], { type: 'text/vcard' });
