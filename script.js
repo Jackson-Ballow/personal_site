@@ -160,7 +160,6 @@ TITLE:Co-Founder & CPO
 TEL;TYPE=CELL:+17703558969
 EMAIL;TYPE=WORK:jackson@desync.ai
 EMAIL;TYPE=HOME:jacksonballow@gmail.com
-URL:https://www.desync.ai
 URL;TYPE=LinkedIn:https://www.linkedin.com/in/jackson-ballow-9888271bb/
 URL;TYPE=GitHub:https://github.com/Jackson-Desync
 END:VCARD`;
