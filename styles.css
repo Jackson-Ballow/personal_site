@@ -1150,6 +1150,14 @@ html {
     background: linear-gradient(135deg, #4B0082 0%, #8A2BE2 100%);
 }
 
+.hobby-icon.scuba {
+    background: linear-gradient(135deg, #006994 0%, #00CED1 100%);
+}
+
+.hobby-icon.archery {
+    background: linear-gradient(135deg, #8B4513 0%, #228B22 100%);
+}
+
 /* Special styling for team logos */
 .hobby-icon.notre-dame {
     background: linear-gradient(135deg, #002B5C 0%, #0C2340 100%);
