@@ -1090,6 +1090,15 @@ html {
     transform: scale(1.2) rotateZ(5deg);
 }
 
+/* Slightly larger logos */
+.skill-tag img.logo-lg {
+    transform: scale(1.15);
+}
+
+.skill-tag:hover img.logo-lg {
+    transform: scale(1.35) rotateZ(5deg);
+}
+
 /* Normalize icon font and text symbols to match img/svg sizing */
 .skill-tag i,
 .skill-tag .symbol {
@@ -1131,6 +1140,11 @@ html {
 
 .skill-tag:hover svg {
     color: var(--accent-primary);
+}
+
+/* Invert dark logos in dark mode */
+[data-theme="dark"] .invert-on-dark {
+    filter: invert(1);
 }
 
 /* Alternative compact view for mobile */
