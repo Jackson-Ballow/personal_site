@@ -785,8 +785,9 @@ html {
 
 .featured-stats {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: 40px 60px;
     padding: 30px;
     background-color: var(--bg-tertiary);
     border-radius: 12px;
